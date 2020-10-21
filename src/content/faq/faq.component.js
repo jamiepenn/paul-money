@@ -131,7 +131,7 @@ And we should move toward a public financing system so that groups and corporati
         <Section title="Where’d you get your information from?">
           <p>
             All the donations of the site are available through The Burbank City Board of Elections via documents,{' '}
-            <a href="https://www.burbankca.gov/departments/city-clerk-s-office/elections/2020-candidates-information-informaci-n-para-el-candidatos" target="_blank">here</a>. The articles we
+            <a href="https://www.burbankca.gov/departments/city-clerk-s-office/elections/2020-candidates-information-informaci-n-para-el-candidatos" target="_blank" rel="noopener noreferrer">here</a>. The articles we
             reference are all linked to and publicly available via Google
             search.
           </p>{' '}
