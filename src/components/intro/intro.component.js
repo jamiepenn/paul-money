@@ -6,7 +6,7 @@ import './intro.scss'
 const Intro = () => (
   <div className="intro">
     <H2>
-      David Ryu
+      Paul Herman
       <br />
       Total Support
     </H2>
@@ -15,7 +15,7 @@ const Intro = () => (
         prefix="$"
         delay={0.5}
         start={0}
-        end={3436160}
+        end={34000}
         separator=","
         duration={2.5}
         useEasing
@@ -27,7 +27,7 @@ const Intro = () => (
       and independent expenditures
     </p>
     <p className="introduction">
-      Learn about the wealthy donors and PACs who fund David Ryu.
+      Learn about the wealthy donors and PACs who fund Paul Herman.
     </p>
   </div>
 )

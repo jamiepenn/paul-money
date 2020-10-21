@@ -78,7 +78,7 @@ class Slide extends Component {
                   <div className="ryu-slide__donations">
                     {directDonation && (
                       <div className="ryu-slide__donation">
-                        Direct:{' '}
+                        Contribution:{' '}
                         <span className="ryu-slide__donation-value">
                           {directDonation}
                         </span>
@@ -86,7 +86,7 @@ class Slide extends Component {
                     )}
                     {pacDonation && (
                       <div className="ryu-slide__donation">
-                        PAC:{' '}
+                        Contribution:{' '}
                         <span className="ryu-slide__donation-value">
                           {pacDonation}
                         </span>
@@ -342,30 +342,7 @@ class DonorSlider extends Component {
     )
     return (
       <Fragment>
-        <div className="filters-wrapper">
-          <div className="filter-wrapper">
-            <Select
-              options={this.categories}
-              isMulti
-              onChange={this.handleCategoryChange}
-              placeholder="Filter donor types..."
-              className="react-select-container"
-            />
-          </div>
-          <div className="filter-wrapper">
-            <Select
-              options={visibleDonors.map((donor, index) => ({
-                value: index,
-                label: donor['Name']
-              }))}
-              isClearable
-              ref={this.bindQuerySelectRef}
-              onChange={this.handleQueryChange}
-              placeholder="Search by name..."
-              className="react-select-container"
-            />
-          </div>
-        </div>
+
         <Slider
           ref={this.bindRef}
           {...sliderSettings}
@@ -392,5 +369,34 @@ class DonorSlider extends Component {
     )
   }
 }
+
+/*
+
+<div className="filters-wrapper">
+  <div className="filter-wrapper">
+    <Select
+      options={this.categories}
+      isMulti
+      onChange={this.handleCategoryChange}
+      placeholder="Filter donor types..."
+      className="react-select-container"
+    />
+  </div>
+  <div className="filter-wrapper">
+    <Select
+      options={visibleDonors.map((donor, index) => ({
+        value: index,
+        label: donor['Name']
+      }))}
+      isClearable
+      ref={this.bindQuerySelectRef}
+      onChange={this.handleQueryChange}
+      placeholder="Search by name..."
+      className="react-select-container"
+    />
+  </div>
+</div>
+
+*/
 
 export default DonorSlider
